@@ -1,6 +1,6 @@
 ---
 - name: Copying Dockerfile
-  hosts: all
+  hosts: test
   become: true
 
   tasks:
