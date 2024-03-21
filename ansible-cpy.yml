@@ -10,6 +10,6 @@
         dest: /home/ktk/data/Dockerfile
         owner: jenkins
         group: jenkins
-        mode: 0644
+        mode: 0777
         remote_src: yes 
           
