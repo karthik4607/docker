@@ -7,6 +7,6 @@
     - name: Copy file from 
       ansible.builtin.copy:
         src: /home/ktk/mongo/docker/Dockerfile
-        dest: /home/ktk/playbooks/Dockerfile  
+        dest: /home/ktk/data/Dockerfile  
         remote_src: yes 
           
