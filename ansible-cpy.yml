@@ -8,4 +8,5 @@
       ansible.builtin.copy:
         src: /home/ktk/mongo/docker/Dockerfile
         dest: /home/ktk/playbooks/Dockerfile  
+        remote_src: yes 
           
