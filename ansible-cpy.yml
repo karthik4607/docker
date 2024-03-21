@@ -1,0 +1,11 @@
+---
+- name: Copying Dockerfile
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Copy file from 
+      ansible.builtin.copy
+        src: /home/ktk/mongo/docker/Dockerfile
+        dest: /home/ktk/playbooks/Dockerfile  
+          
