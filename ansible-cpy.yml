@@ -7,7 +7,7 @@
     - name: Copy file from 
       ansible.builtin.copy:
         src: /home/ktk/mongo/docker/Dockerfile
-        dest: /data/Dockerfile
+        dest: /home/ktk/data/Dockerfile
         owner: jenkins
         group: jenkins
         mode: 0644
