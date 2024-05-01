@@ -5,8 +5,8 @@
 replicaCount: 1
 
 image:
-  repository: 767397701249.dkr.ecr.ap-south-1.amazonaws.com/ktkrepo
-  pullPolicy: IfNotPresent
+  repository: kstk4607/new:latest
+  pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
 
