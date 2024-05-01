@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: kstk4607/new:latest
+  repository: kstk4607/new
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "latest"
 
 imagePullSecrets: []
 nameOverride: ""
