@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "ktk-chart.fullname" . }}-test-connection"
+  labels:
+    {{- include "ktk-chart.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "ktk-chart.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never
