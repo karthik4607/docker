@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: my-pod
 spec:
-  container:
+  containers:
     - image: httpd
       name: httpd
       ports:
