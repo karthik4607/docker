@@ -4,8 +4,8 @@ metadata:
   name: my-pod
 spec:
   containers:
-    - image: httpd
-      name: httpd
+    - image: kstk4607/new:nginx
+      name: nginx
       ports:
         - protocol: TCP
           containerPort: 80
