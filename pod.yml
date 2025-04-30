@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: my-pod
   labels:
-    app: ny-pod
+    app: my-pod
 spec:
   containers:
     - image: httpd
