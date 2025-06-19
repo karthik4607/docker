@@ -6,7 +6,7 @@ metadata:
     app: my-pod
 spec:
   containers:
-    - image: httpd
+    - image: apache2
       name: httpd
       ports:
         - protocol: TCP
