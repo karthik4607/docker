@@ -1,6 +1,10 @@
-FROM centos:7
-RUN yum install nano -y
-RUN yum -y install python3;yum install -y python3-pip 
+FROM amazonlinux:2
 
-CMD ["echo","centos installed successfully"]
+RUN yum install -y nginx && yum clean all
+
+COPY index.html /usr/share/nginx/html/index.html
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
 
